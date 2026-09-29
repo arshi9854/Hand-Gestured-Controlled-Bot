@@ -1,8 +1,8 @@
 # Hand Gesture Controlled Robot
 
-An engineering project reconstructed from five surviving reference snapshots: hand tilt → analog accelerometer → Arduino → RF link → Arduino → dual DC motors.
+An engineering project reconstructed from the owner’s recollections and supplied reference material: hand tilt → analog accelerometer → Arduino → RF link → Arduino → dual DC motors.
 
-**Status:** historical project documentation recovery, with newly written reference firmware. Original source code was lost. This reconstruction has not been tested on physical hardware. The snapshots show reference diagrams and presentation material, not a photograph of the assembled robot.
+**Status:** historical project documentation recovery, with newly written reference firmware. Original source code was lost. This reconstruction has not been tested on physical hardware. The supplied image is a motor-control reference diagram, not a photograph of the assembled robot.
 
 ```mermaid
 flowchart LR
@@ -18,9 +18,13 @@ flowchart LR
 
 The project owner confirms that tilting the hand controlled forward movement, reverse movement, and turns.
 
-Arduino Uno boards, RF transmitter/receiver diagrams, an analog accelerometer breakout, and an L293D motor-driver schematic appear in the supplied images. The proposed reconstruction uses two Unos, an ADXL335-compatible analog sensor, and a matched ASK/OOK radio pair. Exact original sensor/radio variants, frequency, wiring, software, project year, and individual contributions remain unconfirmed.
+The reference diagram shows an Arduino Uno, an L293D, two motors, and a battery labeled 9 V. The sensor and wireless link are not shown. The proposed reconstruction uses two Unos, an ADXL335-compatible analog sensor, and a matched ASK/OOK radio pair. Exact original sensor/radio variants, frequency, wiring, software, project year, and individual contributions remain unconfirmed.
 
-See the [evidence register](docs/evidence.md) for the five images and their limitations.
+## Motor-control reference
+
+![Arduino Uno connected to an L293D and two DC motors](assets/reference/arduino-l293d-motor-diagram.jpg)
+
+This illustration covers the motor-control subsystem. Use the [documented pin map](docs/hardware.md) for the reference firmware; the image is not its exact wiring guide. See the [evidence register](docs/evidence.md) for provenance and limitations.
 
 ## Reference implementation
 
@@ -46,7 +50,7 @@ These are new implementation choices, not claims about the original firmware. Th
 | `firmware/receiver/` | Robot sketch |
 | `libraries/GestureControl/` | Shared classifier, packet parser, and timeout logic |
 | `docs/` | Evidence, wiring, setup, validation, portfolio notes |
-| `assets/reference/` | Unmodified supplied photographs |
+| `assets/reference/` | Supplied motor-control reference diagram |
 | `tests/` | Host logic regression tests |
 
 ## References and attribution
@@ -54,4 +58,3 @@ These are new implementation choices, not claims about the original firmware. Th
 - [Analog Devices ADXL335](https://www.analog.com/en/products/adxl335.html): candidate analog accelerometer specifications.
 - [Texas Instruments L293D](https://www.ti.com/product/L293D): driver specifications and datasheet.
 - [RadioHead RH_ASK](https://www.airspayce.com/mikem/arduino/RadioHead/classRH__ASK.html): reference firmware radio API.
-

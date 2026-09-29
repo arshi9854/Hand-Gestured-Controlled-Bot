@@ -1,12 +1,12 @@
 # Proposed reconstruction hardware
 
-This is a new, internally consistent pin map. It is not a transcription of the blurred wires in the photos.
+This is a new, internally consistent pin map. It differs from the supplied motor-control illustration, including the enable-pin controls. Follow this map when using the reconstructed firmware.
 
 | Component | Quantity | Basis |
 | --- | --- | --- |
 | Arduino Uno | 2 | Uno visible; two-board architecture inferred |
-| ADXL335-compatible analog breakout | 1 | Candidate based on photo; verify exact board |
-| Matched ASK/OOK transmitter and receiver | 1 pair | RF pair visible; specific model/frequency unconfirmed |
+| ADXL335-compatible analog breakout | 1 | Provisional choice from earlier reference material; not shown in current diagram |
+| Matched ASK/OOK transmitter and receiver | 1 pair | Provisional choice from earlier reference material; not shown in current diagram |
 | L293D DIP-16 | 1 | Label visible in schematic |
 | DC gearmotor | 2 | Two motors depicted; ratings unconfirmed |
 | Chassis, wheels and caster | 1 set | Required reconstruction choice |
@@ -49,7 +49,7 @@ RF receiver DATA → Uno D11. Supply it according to its own datasheet, with com
 
 Use the IC notch to identify DIP pin 1. Add at least 0.1 µF bypass capacitors close to both L293D supply pins to GND, and appropriate bulk decoupling for the actual supply. Do not power motors from the Uno's 5 V pin. Join robot motor-supply negative, driver ground, and receiver Uno ground; the separate hand controller does not need a wire to the robot.
 
-Choose supply and motors together: the L293D supports up to 600 mA per channel, subject to thermal limits, and has a substantial output voltage drop. Check motor stall current, not just free-running current. The reference image's 12 V label is not a recommendation for unknown motors. Verify supply polarity before powering.
+Choose supply and motors together: the L293D supports up to 600 mA per channel, subject to thermal limits, and has a substantial output voltage drop. Check motor stall current, not just free-running current. The reference image's 9 V battery label is not a recommendation for unknown motors. Verify supply polarity before powering.
 
 The code uses full-speed digital enable signals. RadioHead uses Timer1 on the Uno; no Timer1 PWM or Servo dependency is introduced. Stop disables the bridges and lets motors coast; it is not active braking. Provide a reachable physical motor-power switch for bench work.
 

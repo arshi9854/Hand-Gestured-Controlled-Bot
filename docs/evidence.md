@@ -1,22 +1,18 @@
 # Evidence register
 
-All five photos were supplied during reconstruction on 2026-09-29. Filenames describe receipt, not the original project date. Diagrams may be workshop/reference material; they cannot establish final as-built wiring or successful operation.
+## Supplied motor-control reference
 
-| Image | Visible evidence | What remains uncertain |
-| --- | --- | --- |
-| [01](../assets/reference/01-motor-breadboard.jpeg) | Uno, breadboard, DIP driver, two DC motors | Exact connections and driver marking |
-| [02](../assets/reference/02-rf-pin-diagram.jpeg) | Presentation with RF transmitter and receiver pin diagrams | Manufacturer, frequency, voltage, modulation |
-| [03](../assets/reference/03-rf-receiver.jpeg) | Uno wired to an RF receiver-style module | Exact pin numbers and module variant |
-| [04](../assets/reference/04-accelerometer.jpeg) | Analog accelerometer breakout, X/Y/Z labels, Uno analog header | Appears ADXL335-style; model needs confirmation |
-| [05](../assets/reference/05-l293d-schematic.jpeg) | Explicit L293D label and single-motor schematic | Reference circuit, not proof of final two-motor wiring |
+![Arduino Uno, L293D, and two DC motors](../assets/reference/arduino-l293d-motor-diagram.jpg)
 
-## Original reference photographs
+The owner supplied this clearer diagram on 2026-09-29 to replace the five earlier photographs. The date records receipt, not the original project date. The original creator and license are unconfirmed.
 
-![Motor breadboard reference](../assets/reference/01-motor-breadboard.jpeg)
-![RF pin diagram](../assets/reference/02-rf-pin-diagram.jpeg)
-![RF receiver reference](../assets/reference/03-rf-receiver.jpeg)
-![Accelerometer reference](../assets/reference/04-accelerometer.jpeg)
-![L293D reference schematic](../assets/reference/05-l293d-schematic.jpeg)
+| Visible evidence | Limitations |
+| --- | --- |
+| Arduino Uno, breadboard, L293D, two motors, and battery labeled 9 V | Reference illustration; does not establish the original as-built wiring or successful operation |
+| Motor-driver wiring | Does not match all pin assignments and enable-control provisions in the reconstructed firmware; follow the documented pin map |
+| Motor-control subsystem | No accelerometer or RF modules are depicted; their exact original variants remain unconfirmed |
+
+The diagram's battery label does not establish the original battery or a suitable supply for unknown motors. Earlier reference material informed the initial reconstruction, but the proposed sensor, radio, and two-board architecture remain provisional.
 
 ## Owner-confirmed behavior
 
