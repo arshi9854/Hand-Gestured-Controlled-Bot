@@ -20,11 +20,23 @@ The project owner confirms that tilting the hand controlled forward movement, re
 
 The reference diagram shows an Arduino Uno, an L293D, two motors, and a battery labeled 9 V. The sensor and wireless link are not shown. The proposed reconstruction uses two Unos, an ADXL335-compatible analog sensor, and a matched ASK/OOK radio pair. Exact original sensor/radio variants, frequency, wiring, software, project year, and individual contributions remain unconfirmed.
 
-## Motor-control reference
+## Circuit diagrams
 
-![Arduino Uno connected to an L293D and two DC motors](assets/reference/arduino-l293d-motor-diagram.jpg)
+These original connection diagrams match the reconstructed firmware. Pin positions are symbolic; the L293D labels include physical DIP pin numbers. Radio models and supply requirements still need confirmation.
 
-This illustration covers the motor-control subsystem. Use the [documented pin map](docs/hardware.md) for the reference firmware; the image is not its exact wiring guide. See the [evidence register](docs/evidence.md) for provenance and limitations.
+### Hand-controller transmitter
+
+![Hand-controller transmitter wiring](assets/diagrams/01-transmitter.png)
+
+### Robot receiver and motors
+
+![Robot receiver and L293D motor wiring](assets/diagrams/02-receiver.png)
+
+### Power and enable connections
+
+![Robot supply bypass and enable pulldowns](assets/diagrams/03-power-and-enables.png)
+
+[Download SVG diagrams and read the diagram guide](docs/diagrams.md). The supplied historical reference remains in the [evidence register](docs/evidence.md).
 
 ## Reference implementation
 

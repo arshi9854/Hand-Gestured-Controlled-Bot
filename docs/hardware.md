@@ -1,6 +1,6 @@
 # Proposed reconstruction hardware
 
-This is a new, internally consistent pin map. It differs from the supplied motor-control illustration, including the enable-pin controls. Follow this map when using the reconstructed firmware.
+This is a new, internally consistent pin map. It differs from the supplied motor-control illustration, including the enable-pin controls. Follow this map when using the reconstructed firmware. The [generated circuit diagrams](diagrams.md) illustrate this map, including a separate sheet for power and enable connections.
 
 | Component | Quantity | Basis |
 | --- | --- | --- |

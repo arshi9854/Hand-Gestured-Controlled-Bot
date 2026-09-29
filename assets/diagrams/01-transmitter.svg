@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+<rect width="1600" height="1100" fill="white"/>
+<text x="60" y="73.28" font-family="Arial, sans-serif" font-size="34" fill="#173047">01  /  Hand-controller transmitter</text>
+<text x="60" y="112.48" font-family="Arial, sans-serif" font-size="19" fill="#526779">Analog hand tilt → Arduino Uno → matched ASK/OOK RF transmitter</text>
+<polyline points="60,140 1540,140" fill="none" stroke="#d7e1e8" stroke-width="2"/>
+<rect x="100" y="220" width="310" height="350" rx="12" fill="#fff0ec" stroke="#173047" stroke-width="2"/>
+<text x="120" y="252.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">ADXL335-compatible sensor</text>
+<rect x="710" y="220" width="310" height="540" rx="12" fill="#edf5fa" stroke="#173047" stroke-width="2"/>
+<text x="730" y="257.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">Arduino Uno · TX</text>
+<polyline points="410,320 430,320" fill="none" stroke="#bd423d" stroke-width="3"/>
+<text x="260" y="324.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">VCC</text>
+<polyline points="710,320 690,320" fill="none" stroke="#bd423d" stroke-width="3"/>
+<text x="724" y="324.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">3.3 V</text>
+<polyline points="430,320 690,320" fill="none" stroke="#bd423d" stroke-width="3"/>
+<polyline points="410,375 430,375" fill="none" stroke="#173047" stroke-width="3"/>
+<text x="260" y="379.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">GND</text>
+<polyline points="710,375 690,375" fill="none" stroke="#173047" stroke-width="3"/>
+<text x="724" y="379.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">GND</text>
+<polyline points="430,375 690,375" fill="none" stroke="#173047" stroke-width="3"/>
+<polyline points="410,430 430,430" fill="none" stroke="#21835b" stroke-width="3"/>
+<text x="260" y="434.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">X OUT</text>
+<polyline points="710,430 690,430" fill="none" stroke="#21835b" stroke-width="3"/>
+<text x="724" y="434.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">A0</text>
+<polyline points="430,430 690,430" fill="none" stroke="#21835b" stroke-width="3"/>
+<polyline points="410,485 430,485" fill="none" stroke="#21835b" stroke-width="3"/>
+<text x="260" y="489.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">Y OUT</text>
+<polyline points="710,485 690,485" fill="none" stroke="#21835b" stroke-width="3"/>
+<text x="724" y="489.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">A1</text>
+<polyline points="430,485 690,485" fill="none" stroke="#21835b" stroke-width="3"/>
+<text x="125" y="546.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">Z OUT: unused / open</text>
+<rect x="1190" y="440" width="330" height="310" rx="12" fill="#eef8ef" stroke="#173047" stroke-width="2"/>
+<text x="1210" y="477.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">ASK/OOK RF · TX</text>
+<polyline points="1020,570 1040,570" fill="none" stroke="#21835b" stroke-width="3"/>
+<text x="870" y="574.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">D12</text>
+<polyline points="1190,570 1170,570" fill="none" stroke="#21835b" stroke-width="3"/>
+<text x="1204" y="574.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">DATA</text>
+<polyline points="1040,570 1170,570" fill="none" stroke="#21835b" stroke-width="3"/>
+<polyline points="1190,630 1170,630" fill="none" stroke="#bd423d" stroke-width="3"/>
+<text x="1204" y="634.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">VCC</text>
+<polyline points="1170,630 1090,630" fill="none" stroke="#bd423d" stroke-width="3"/>
+<text x="1045" y="670.56" font-family="Arial, sans-serif" font-size="18" fill="#bd423d">V_RF_TX</text>
+<polyline points="1190,710 1170,710" fill="none" stroke="#173047" stroke-width="3"/>
+<text x="1204" y="714.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">GND</text>
+<polyline points="1170,710 1090,710" fill="none" stroke="#173047" stroke-width="3"/>
+<text x="1050" y="751.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">GND_TX</text>
+<text x="735" y="666.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">D10, D11: reserved</text>
+<text x="735" y="698.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">Leave unconnected</text>
+<text x="735" y="296.56" font-family="Arial, sans-serif" font-size="18" fill="#237cba">USB power input</text>
+<rect x="100" y="810" width="1420" height="160" rx="12" fill="#f7f9fb" stroke="#173047" stroke-width="2"/>
+<text x="120" y="847.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">Power and calibration notes</text>
+<text x="125" y="873.4" font-family="Arial, sans-serif" font-size="20" fill="#173047">GND_TX: connect Uno GND, sensor GND, and transmitter supply negative together.</text>
+<text x="125" y="908.4" font-family="Arial, sans-serif" font-size="20" fill="#173047">V_RF_TX: use the radio module’s rated supply and verify compatibility with Uno 5 V data output.</text>
+<text x="125" y="943.4" font-family="Arial, sans-serif" font-size="20" fill="#173047">Sensor: use a confirmed 3.3 V-compatible breakout. Hold flat during startup calibration. No wire to robot ground.</text>
+<polyline points="60,1015 1540,1015" fill="none" stroke="#d7e1e8" stroke-width="2"/>
+<text x="60" y="1056.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">HAND GESTURE CONTROLLED ROBOT  /  Reconstructed design · hardware validation pending</text>
+<text x="60" y="1084.72" font-family="Arial, sans-serif" font-size="16" fill="#526779">Functional connection diagram: pin positions are symbolic. Named nets connect only within their own setup.</text>
+</svg>

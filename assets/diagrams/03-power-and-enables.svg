@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+<rect width="1600" height="1100" fill="white"/>
+<text x="60" y="73.28" font-family="Arial, sans-serif" font-size="34" fill="#173047">03  /  Robot power and enable details</text>
+<text x="60" y="112.48" font-family="Arial, sans-serif" font-size="19" fill="#526779">Connect these nets to sheet 02 · motor power and logic power have a common robot ground</text>
+<polyline points="60,140 1540,140" fill="none" stroke="#d7e1e8" stroke-width="2"/>
+<text x="65" y="226.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">Logic bypass</text>
+<text x="370" y="226.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">Motor bypass</text>
+<text x="675" y="226.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">Left enable</text>
+<text x="980" y="226.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">Right enable</text>
+<text x="1285" y="226.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">Motor supply</text>
+<text x="85" y="294.32" font-family="Arial, sans-serif" font-size="21" fill="#bd423d">+5V_LOGIC</text>
+<text x="80" y="330.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">L293D pin 16</text>
+<polyline points="170,355 170,460" fill="none" stroke="#bd423d" stroke-width="3"/>
+<polyline points="136,460 204,460" fill="none" stroke="#173047" stroke-width="4"/>
+<polyline points="136,479 204,479" fill="none" stroke="#173047" stroke-width="4"/>
+<polyline points="170,479 170,660" fill="none" stroke="#173047" stroke-width="3"/>
+<text x="212" y="472.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">0.1 µF</text>
+<text x="115" y="701.4" font-family="Arial, sans-serif" font-size="20" fill="#173047">GND_RX</text>
+<text x="390" y="294.32" font-family="Arial, sans-serif" font-size="21" fill="#bd423d">VMOTOR</text>
+<text x="385" y="330.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">L293D pin 8</text>
+<polyline points="475,355 475,460" fill="none" stroke="#bd423d" stroke-width="3"/>
+<polyline points="441,460 509,460" fill="none" stroke="#173047" stroke-width="4"/>
+<polyline points="441,479 509,479" fill="none" stroke="#173047" stroke-width="4"/>
+<polyline points="475,479 475,660" fill="none" stroke="#173047" stroke-width="3"/>
+<text x="517" y="472.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">0.1 µF</text>
+<text x="420" y="701.4" font-family="Arial, sans-serif" font-size="20" fill="#173047">GND_RX</text>
+<text x="715" y="294.32" font-family="Arial, sans-serif" font-size="21" fill="#21835b">Uno D5</text>
+<text x="690" y="330.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">L293D pin 1</text>
+<polyline points="780,355 780,425" fill="none" stroke="#21835b" stroke-width="3"/>
+<rect x="762" y="425" width="36" height="110" rx="12" fill="white" stroke="#173047" stroke-width="2"/>
+<text x="815" y="481.4" font-family="Arial, sans-serif" font-size="20" fill="#173047">10 kΩ</text>
+<polyline points="780,535 780,660" fill="none" stroke="#173047" stroke-width="3"/>
+<text x="725" y="701.4" font-family="Arial, sans-serif" font-size="20" fill="#173047">GND_RX</text>
+<text x="1020" y="294.32" font-family="Arial, sans-serif" font-size="21" fill="#21835b">Uno D6</text>
+<text x="995" y="330.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">L293D pin 9</text>
+<polyline points="1085,355 1085,425" fill="none" stroke="#21835b" stroke-width="3"/>
+<rect x="1067" y="425" width="36" height="110" rx="12" fill="white" stroke="#173047" stroke-width="2"/>
+<text x="1120" y="481.4" font-family="Arial, sans-serif" font-size="20" fill="#173047">10 kΩ</text>
+<polyline points="1085,535 1085,660" fill="none" stroke="#173047" stroke-width="3"/>
+<text x="1030" y="701.4" font-family="Arial, sans-serif" font-size="20" fill="#173047">GND_RX</text>
+<text x="1310" y="294.32" font-family="Arial, sans-serif" font-size="21" fill="#bd423d">Supply +</text>
+<polyline points="1390,320 1390,395" fill="none" stroke="#bd423d" stroke-width="3"/>
+<polyline points="1390,395 1420,450" fill="none" stroke="#bd423d" stroke-width="3"/>
+<polyline points="1390,465 1390,590" fill="none" stroke="#bd423d" stroke-width="3"/>
+<text x="1440" y="431.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">SW1</text>
+<text x="1325" y="631.4" font-family="Arial, sans-serif" font-size="20" fill="#bd423d">VMOTOR</text>
+<text x="1300" y="706.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">Supply − → GND_RX</text>
+<rect x="60" y="765" width="1480" height="225" rx="12" fill="#f7f9fb" stroke="#173047" stroke-width="2"/>
+<text x="80" y="802.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">Assembly notes</text>
+<text x="85" y="828.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">+5V_LOGIC: regulated 5 V; USB-powered Uno 5 V output may feed driver logic only, within the USB current budget.</text>
+<text x="85" y="864.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">GND_RX joins Uno GND, RF receiver GND, motor supply negative, and L293D pins 4, 5, 12, 13.</text>
+<text x="85" y="900.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">Place bypass capacitors close to the driver. Add bulk capacitance appropriate to the motor supply and wiring.</text>
+<text x="85" y="936.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">Choose VMOTOR for the actual motors and driver limits. Do not power the motors from the Uno 5 V pin.</text>
+<text x="85" y="972.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">V_RF_RX is a separate module-rated rail unless its datasheet permits +5V_LOGIC. Never connect VMOTOR to VCC1.</text>
+<polyline points="60,1015 1540,1015" fill="none" stroke="#d7e1e8" stroke-width="2"/>
+<text x="60" y="1056.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">HAND GESTURE CONTROLLED ROBOT  /  Reconstructed design · hardware validation pending</text>
+<text x="60" y="1084.72" font-family="Arial, sans-serif" font-size="16" fill="#526779">Functional connection diagram: pin positions are symbolic. Named nets connect only within their own setup.</text>
+</svg>
