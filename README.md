@@ -80,32 +80,22 @@ The application payload has three bytes: `G`, protocol version `1`, and command 
 
 ```mermaid
 sequenceDiagram
-    actor Hand as Hand movement
-    participant TX as Transmitter Uno
-    participant RF as RF link
-    participant RX as Receiver Uno
-    participant Motors as L293D and motors
-    Note over TX,RX: Receiver starts disarmed; motor outputs disabled
-    Hand->>TX: Hold neutral after calibration
-    TX->>RF: G, 1, STOP
-    RF->>RX: Deliver CRC-valid frame
-    RX->>RX: Validate payload and arm
-    Note over RX,Motors: Motors remain off
-    loop While receiving a deliberate tilt
-        Hand->>TX: Tilt in a direction
-        TX->>TX: Read and classify X/Y
-        TX->>RF: G, 1, direction command
-        RF->>RX: Deliver frame
-        RX->>RX: Validate and refresh accepted-packet time
-        opt Motor command changed
-            RX->>Motors: Disable bridges; set direction; enable
-        end
-    end
-    Hand->>TX: Return to neutral
-    TX->>RF: G, 1, STOP
-    RF->>RX: Deliver frame
-    RX->>Motors: Disable both bridges; coast
-    Note over TX,RX: If accepted packets stop for 500 ms, receiver disarms
+    participant TX as Hand controller
+    participant RX as Robot receiver
+    participant M as Motors
+
+    Note over TX,RX: Commands travel over RF
+    TX->>RX: STOP after calibration
+    RX->>RX: Validate and arm
+    Note right of M: Remain off
+
+    TX->>RX: Direction command
+    RX->>RX: Validate and refresh timeout
+    RX->>M: Apply wheel directions
+
+    TX->>RX: STOP when hand is neutral
+    RX->>M: Disable both bridges
+    Note right of M: Wheels coast
 ```
 
 ### 3. Receiver states and recovery
@@ -114,22 +104,30 @@ An **armed** receiver may accept movement commands. A **disarmed** receiver requ
 
 ```mermaid
 stateDiagram-v2
-    state "Disarmed: outputs disabled" as Disarmed
-    state "Armed: stopped" as Ready
-    state "Armed: moving" as Moving
+    direction TB
     [*] --> Disarmed
-    Disarmed --> Disarmed: Movement packet ignored
-    Disarmed --> Ready: Valid STOP packet
-    Ready --> Ready: Valid STOP refreshes timeout
-    Ready --> Moving: Valid direction packet
-    Moving --> Moving: Valid direction refreshes timeout
-    Moving --> Ready: Valid STOP packet
-    Ready --> Disarmed: No accepted packet for 500 ms
-    Moving --> Disarmed: No accepted packet for 500 ms
-    Ready --> Disarmed: Invalid application payload
-    Moving --> Disarmed: Invalid application payload
-    Disarmed --> Disarmed: Invalid payload remains disarmed
+    Disarmed: Motors disabled
+    Disarmed --> Armed: Valid STOP
+
+    state Armed {
+        [*] --> Stopped
+        Stopped --> Moving: Valid direction
+        Moving --> Stopped: Valid STOP
+    }
+
+    Armed --> Disarmed: Timeout or invalid payload
 ```
+
+| Event | Receiver behavior |
+| --- | --- |
+| Movement packet while disarmed | Ignore it and keep motors disabled |
+| Valid STOP while disarmed | Arm the receiver with motors off |
+| Valid packet while armed | Apply the command and refresh the timeout |
+| No accepted packet for 500 ms | Disable motors and disarm |
+| Invalid application payload | Disable motors and disarm |
+| Radio CRC failure | Drop the frame without refreshing the timeout |
+
+Repeated commands retain the current stopped or moving state. After disarming, a valid STOP is required before movement can resume.
 
 Timeouts are checked by the firmware loop. Disabling the bridges allows coasting; it does not guarantee the wheels physically stop within 500 ms. A receiver radio-initialization failure leaves the outputs disabled and halts the sketch.
 
