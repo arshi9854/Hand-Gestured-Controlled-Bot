@@ -35,7 +35,7 @@ The controller reads hand tilt and sends a direction command over RF. The robot 
 
 ## What is covered
 
-The diagrams show the complete proposed setup: an ADXL335-compatible hand-tilt sensor, a transmitter Uno and RF transmitter, a wireless ASK/OOK link, and a receiver Uno controlling two motors through an L293D. The sensor outputs connect to A0 and A1; transmitter data uses D12 and receiver data uses D11. Exact original sensor/radio variants, frequency, wiring, software, project year, and individual contributions remain unconfirmed.
+The diagrams show the complete proposed setup: an ADXL335-compatible hand-tilt sensor, a transmitter Uno and RF transmitter, a wireless ASK/OOK link, and a receiver Uno controlling two motors through an L293D. The sensor outputs connect to A0 and A1; transmitter data uses D12 and receiver data uses D11. This repository documents the reconstructed hardware connections, Arduino firmware, gesture mapping, and setup procedure.
 
 ## How the firmware works
 
