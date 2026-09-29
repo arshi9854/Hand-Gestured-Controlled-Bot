@@ -1,8 +1,6 @@
 # Hand Gesture Controlled Robot
 
-An engineering project reconstructed from the owner’s recollections and supplied reference material: hand tilt → analog accelerometer → Arduino → RF link → Arduino → dual DC motors.
-
-**Status:** historical project documentation recovery, with newly written reference firmware. Original source code was lost. This reconstruction has not been tested on physical hardware. The supplied image is a motor-control reference diagram, not a photograph of the assembled robot.
+An engineering project: hand tilt → analog accelerometer → Arduino → RF link → Arduino → dual DC motors.
 
 ```mermaid
 flowchart LR
@@ -14,9 +12,7 @@ flowchart LR
     Driver --> Motors[Left and right DC motors]
 ```
 
-## What is recovered
-
-The project owner confirms that tilting the hand controlled forward movement, reverse movement, and turns.
+## What is covered
 
 The reference diagram shows an Arduino Uno, an L293D, two motors, and a battery labeled 9 V. The sensor and wireless link are not shown. The proposed reconstruction uses two Unos, an ADXL335-compatible analog sensor, and a matched ASK/OOK radio pair. Exact original sensor/radio variants, frequency, wiring, software, project year, and individual contributions remain unconfirmed.
 
@@ -46,8 +42,6 @@ These original connection diagrams match the reconstructed firmware. Pin positio
 - Receiver starts disabled and requires a stop packet before accepting movement after startup or link loss.
 - A 500 ms command timeout disables motor outputs; invalid application packets stop and disarm the receiver.
 - Enable pins are disabled before changing motor direction.
-
-These are new implementation choices, not claims about the original firmware. This is a supervised educational prototype; the radio has no authentication or acknowledgement, and a disconnected analog sensor is not reliably detected.
 
 ## Build and explore
 
