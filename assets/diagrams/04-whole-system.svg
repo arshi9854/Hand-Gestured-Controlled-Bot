@@ -11,14 +11,15 @@
 <polygon points="158.7,448.0 226.3,448.0 226.3,493.5 158.7,493.5" fill="#daedf5" stroke="#173047" stroke-width="2"/>
 <polyline points="178.2,458.4 208.10000000000002,458.4 208.10000000000002,483.1 178.2,483.1 178.2,458.4" fill="none" stroke="#173047" stroke-width="2"/>
 <polygon points="178.2,458.4 208.10000000000002,458.4 208.10000000000002,483.1 178.2,483.1" fill="#237cba" stroke="#173047" stroke-width="2"/>
-<text x="90" y="619.32" font-family="Arial, sans-serif" font-size="21" fill="#173047">Hand-mounted sensor</text>
-<text x="90" y="652.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">Analog X / Y tilt signals</text>
+<text x="90" y="609.32" font-family="Arial, sans-serif" font-size="21" fill="#173047">ADXL335-compatible</text>
+<text x="90" y="640.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">Hand-mounted tilt sensor</text>
+<text x="90" y="673.56" font-family="Arial, sans-serif" font-size="18" fill="#21835b">X to A0 / Y to A1</text>
 <rect x="365" y="285" width="235" height="105" rx="12" fill="#edf5fa" stroke="#173047" stroke-width="2"/>
 <text x="385" y="319.4" font-family="Arial, sans-serif" font-size="20" fill="#173047">Arduino Uno · TX</text>
 <text x="387" y="346.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">Calibrate + classify</text>
 <rect x="365" y="465" width="235" height="105" rx="12" fill="#eaf6ed" stroke="#173047" stroke-width="2"/>
 <text x="385" y="502.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">RF transmitter</text>
-<text x="387" y="526.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">Command packet</text>
+<text x="387" y="526.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">DATA from Uno D12</text>
 <polyline points="280,452 345,340" fill="none" stroke="#21835b" stroke-width="4"/>
 <polyline points="345,340 343.8633257647202,354.9568703839691 332.5773129091003,348.40695220883254 345,340" fill="none" stroke="#21835b" stroke-width="2"/>
 <polygon points="345,340 343.8633257647202,354.9568703839691 332.5773129091003,348.40695220883254" fill="#21835b" stroke="#21835b" stroke-width="2"/>
@@ -31,7 +32,8 @@
 <polygon points="940,518 926.4932934647098,524.5244830116685 926.4932934647098,511.47551698833155" fill="#237cba" stroke="#237cba" stroke-width="2"/>
 <text x="687" y="476.16" font-family="Arial, sans-serif" font-size="23" fill="#237cba">WIRELESS RF</text>
 <text x="668" y="568.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">Matched ASK/OOK pair</text>
-<text x="679" y="605.64" font-family="Arial, sans-serif" font-size="17" fill="#526779">No cable between devices</text>
+<text x="679" y="605.64" font-family="Arial, sans-serif" font-size="17" fill="#526779">Receiver DATA to Uno D11</text>
+<text x="679" y="638.64" font-family="Arial, sans-serif" font-size="17" fill="#526779">No cable between devices</text>
 <rect x="960" y="190" width="580" height="600" rx="12" fill="#f8fafc" stroke="#173047" stroke-width="2"/>
 <text x="980" y="227.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">ROBOT RECEIVER</text>
 <rect x="1110" y="300" width="270" height="335" rx="12" fill="#e6f0f5" stroke="#173047" stroke-width="2"/>

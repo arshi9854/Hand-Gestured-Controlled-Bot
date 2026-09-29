@@ -11,7 +11,7 @@ The hand controller and robot are separate devices. The wireless link carries di
 ```mermaid
 flowchart LR
     subgraph HandController["Hand controller"]
-        Hand["Hand tilt"] --> Sensor["Analog accelerometer"]
+        Hand["Hand tilt"] --> Sensor["ADXL335-compatible tilt sensor"]
         Sensor -->|"X to A0; Y to A1"| TXUno["Transmitter Uno"]
         TXUno -->|"D12: encoded command"| TXRadio["RF transmitter"]
     end
@@ -35,7 +35,7 @@ The controller reads hand tilt and sends a direction command over RF. The robot 
 
 ## What is covered
 
-The reference diagram shows an Arduino Uno, an L293D, two motors, and a battery labeled 9 V. The sensor and wireless link are not shown. The proposed reconstruction uses two Unos, an ADXL335-compatible analog sensor, and a matched ASK/OOK radio pair. Exact original sensor/radio variants, frequency, wiring, software, project year, and individual contributions remain unconfirmed.
+The diagrams show the complete proposed setup: an ADXL335-compatible hand-tilt sensor, a transmitter Uno and RF transmitter, a wireless ASK/OOK link, and a receiver Uno controlling two motors through an L293D. The sensor outputs connect to A0 and A1; transmitter data uses D12 and receiver data uses D11. Exact original sensor/radio variants, frequency, wiring, software, project year, and individual contributions remain unconfirmed.
 
 ## How the firmware works
 
