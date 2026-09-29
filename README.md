@@ -49,14 +49,9 @@ These are new implementation choices, not claims about the original firmware. Th
 | `assets/reference/` | Unmodified supplied photographs |
 | `tests/` | Host logic regression tests |
 
-## Portfolio context
-
-The project can demonstrate sensor interfacing, embedded programming, wireless communication, and motor control once personal contributions are confirmed. No range, accuracy, latency, payload, or reliability results are claimed. Use [portfolio notes](docs/portfolio.md) to record the original work and distinguish it from this reconstruction.
-
 ## References and attribution
 
 - [Analog Devices ADXL335](https://www.analog.com/en/products/adxl335.html): candidate analog accelerometer specifications.
 - [Texas Instruments L293D](https://www.ti.com/product/L293D): driver specifications and datasheet.
 - [RadioHead RH_ASK](https://www.airspayce.com/mikem/arduino/RadioHead/classRH__ASK.html): reference firmware radio API.
 
-Supplied photos contain third-party diagrams, including visible Fritzing and microcontroller-project.com markings. They are retained as historical reference material; authorship of those diagrams is not claimed. No blanket license is applied to these images or this repository pending ownership review.
