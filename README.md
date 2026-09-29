@@ -2,15 +2,16 @@
 
 An engineering project: hand tilt → analog accelerometer → Arduino → RF link → Arduino → dual DC motors.
 
-```mermaid
-flowchart LR
-    Hand[Hand tilt] --> Sensor[Analog accelerometer]
-    Sensor --> TX[Transmitter Arduino Uno]
-    TX --> RF[RF wireless link]
-    RF --> RX[Receiver Arduino Uno]
-    RX --> Driver[L293D motor driver]
-    Driver --> Motors[Left and right DC motors]
-```
+![Complete hand controller and robot connection](assets/diagrams/04-whole-system.png)
+
+## Gestures and operation
+
+![Forward, reverse, left, right, and neutral gesture guide](assets/diagrams/05-gesture-map.png)
+
+The controller reads hand tilt and sends a direction command over RF. The robot receives that command and drives its two motors through the L293D. Neutral stops the motors; the reconstructed firmware also stops and disarms after communication loss.
+
+[Explore the control flow and operating snapshots](docs/system-overview.md). These are newly drawn illustrations of the reconstructed design; actual hardware testing remains pending.
+
 
 ## What is covered
 

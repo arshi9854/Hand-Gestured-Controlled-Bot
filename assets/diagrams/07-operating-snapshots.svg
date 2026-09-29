@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+<rect width="1600" height="1100" fill="white"/>
+<text x="60" y="73.28" font-family="Arial, sans-serif" font-size="34" fill="#173047">07  /  Important operating snapshots</text>
+<text x="60" y="112.48" font-family="Arial, sans-serif" font-size="19" fill="#526779">Illustrated bench sequence · expected behavior, not recorded test results</text>
+<polyline points="60,140 1540,140" fill="none" stroke="#d7e1e8" stroke-width="2"/>
+<rect x="60" y="190" width="725" height="365" rx="12" fill="#edf5fa" stroke="#173047" stroke-width="2"/>
+<text x="80" y="227.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">A  POWER ON / CALIBRATE</text>
+<polyline points="120.0,411.25 120.0,388.75 99.0,360.25 90.0,340.75 96.75,332.5 108.75,343.0 118.5,353.5 117.0,298.0 123.0,291.25 129.75,296.5 132.0,337.75 132.75,276.25 139.5,270.25 147.0,275.5 147.75,337.0 150.75,270.25 157.5,265.0 165.0,271.0 163.5,339.25 171.0,286.0 179.25,283.75 183.75,292.0 177.0,360.25 169.5,381.25 168.75,411.25 120.0,411.25" fill="none" stroke="#173047" stroke-width="2"/>
+<polygon points="120.0,411.25 120.0,388.75 99.0,360.25 90.0,340.75 96.75,332.5 108.75,343.0 118.5,353.5 117.0,298.0 123.0,291.25 129.75,296.5 132.0,337.75 132.75,276.25 139.5,270.25 147.0,275.5 147.75,337.0 150.75,270.25 157.5,265.0 165.0,271.0 163.5,339.25 171.0,286.0 179.25,283.75 183.75,292.0 177.0,360.25 169.5,381.25 168.75,411.25" fill="#f8e2cc" stroke="#173047" stroke-width="2"/>
+<polyline points="126.75,347.5 165.75,347.5 165.75,373.75 126.75,373.75 126.75,347.5" fill="none" stroke="#173047" stroke-width="2"/>
+<polygon points="126.75,347.5 165.75,347.5 165.75,373.75 126.75,373.75" fill="#daedf5" stroke="#173047" stroke-width="2"/>
+<polyline points="138.0,353.5 155.25,353.5 155.25,367.75 138.0,367.75 138.0,353.5" fill="none" stroke="#173047" stroke-width="2"/>
+<polygon points="138.0,353.5 155.25,353.5 155.25,367.75 138.0,367.75" fill="#237cba" stroke="#173047" stroke-width="2"/>
+<rect x="590" y="255" width="130" height="170" rx="12" fill="#e6f0f5" stroke="#173047" stroke-width="2"/>
+<rect x="568" y="340.0" width="35" height="56.1" rx="12" fill="#344858" stroke="#173047" stroke-width="2"/>
+<rect x="707" y="340.0" width="35" height="56.1" rx="12" fill="#344858" stroke="#173047" stroke-width="2"/>
+<text x="625.0" y="284.8" font-family="Arial, sans-serif" font-size="15" fill="#526779">FRONT</text>
+<rect x="618" y="320" width="74" height="60" rx="12" fill="#d9ecf7" stroke="#173047" stroke-width="2"/>
+<text x="638" y="353.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">BOT</text>
+<polyline points="250,350 266,350" fill="none" stroke="#526779" stroke-width="3"/>
+<polyline points="282,350 298,350" fill="none" stroke="#526779" stroke-width="3"/>
+<polyline points="314,350 330,350" fill="none" stroke="#526779" stroke-width="3"/>
+<polyline points="346,350 362,350" fill="none" stroke="#526779" stroke-width="3"/>
+<polyline points="378,350 394,350" fill="none" stroke="#526779" stroke-width="3"/>
+<polyline points="410,350 426,350" fill="none" stroke="#526779" stroke-width="3"/>
+<polyline points="442,350 458,350" fill="none" stroke="#526779" stroke-width="3"/>
+<polyline points="474,350 490,350" fill="none" stroke="#526779" stroke-width="3"/>
+<polyline points="506,350 522,350" fill="none" stroke="#526779" stroke-width="3"/>
+<polyline points="382,340 402,360" fill="none" stroke="#526779" stroke-width="3"/>
+<polyline points="382,360 402,340" fill="none" stroke="#526779" stroke-width="3"/>
+<text x="250" y="320.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">No packets yet</text>
+<text x="90" y="459.32" font-family="Arial, sans-serif" font-size="21" fill="#173047">Hold the controller flat</text>
+<text x="90" y="498.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">Transmitter measures neutral.</text>
+<text x="90" y="526.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">Receiver stays disabled.</text>
+<rect x="815" y="190" width="725" height="365" rx="12" fill="#eef7f1" stroke="#173047" stroke-width="2"/>
+<text x="835" y="227.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">B  NEUTRAL / ARM</text>
+<polyline points="875.0,411.25 875.0,388.75 854.0,360.25 845.0,340.75 851.75,332.5 863.75,343.0 873.5,353.5 872.0,298.0 878.0,291.25 884.75,296.5 887.0,337.75 887.75,276.25 894.5,270.25 902.0,275.5 902.75,337.0 905.75,270.25 912.5,265.0 920.0,271.0 918.5,339.25 926.0,286.0 934.25,283.75 938.75,292.0 932.0,360.25 924.5,381.25 923.75,411.25 875.0,411.25" fill="none" stroke="#173047" stroke-width="2"/>
+<polygon points="875.0,411.25 875.0,388.75 854.0,360.25 845.0,340.75 851.75,332.5 863.75,343.0 873.5,353.5 872.0,298.0 878.0,291.25 884.75,296.5 887.0,337.75 887.75,276.25 894.5,270.25 902.0,275.5 902.75,337.0 905.75,270.25 912.5,265.0 920.0,271.0 918.5,339.25 926.0,286.0 934.25,283.75 938.75,292.0 932.0,360.25 924.5,381.25 923.75,411.25" fill="#f8e2cc" stroke="#173047" stroke-width="2"/>
+<polyline points="881.75,347.5 920.75,347.5 920.75,373.75 881.75,373.75 881.75,347.5" fill="none" stroke="#173047" stroke-width="2"/>
+<polygon points="881.75,347.5 920.75,347.5 920.75,373.75 881.75,373.75" fill="#daedf5" stroke="#173047" stroke-width="2"/>
+<polyline points="893.0,353.5 910.25,353.5 910.25,367.75 893.0,367.75 893.0,353.5" fill="none" stroke="#173047" stroke-width="2"/>
+<polygon points="893.0,353.5 910.25,353.5 910.25,367.75 893.0,367.75" fill="#237cba" stroke="#173047" stroke-width="2"/>
+<rect x="1345" y="255" width="130" height="170" rx="12" fill="#e6f0f5" stroke="#173047" stroke-width="2"/>
+<rect x="1323" y="340.0" width="35" height="56.1" rx="12" fill="#344858" stroke="#173047" stroke-width="2"/>
+<rect x="1462" y="340.0" width="35" height="56.1" rx="12" fill="#344858" stroke="#173047" stroke-width="2"/>
+<text x="1380.0" y="284.8" font-family="Arial, sans-serif" font-size="15" fill="#526779">FRONT</text>
+<rect x="1373" y="320" width="74" height="60" rx="12" fill="#d9ecf7" stroke="#173047" stroke-width="2"/>
+<text x="1393" y="353.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">BOT</text>
+<polyline points="1005,350 1285,350" fill="none" stroke="#237cba" stroke-width="4"/>
+<polyline points="1285,350 1271.49329346471,356.52448301166845 1271.49329346471,343.47551698833155 1285,350" fill="none" stroke="#237cba" stroke-width="2"/>
+<polygon points="1285,350 1271.49329346471,356.52448301166845 1271.49329346471,343.47551698833155" fill="#237cba" stroke="#237cba" stroke-width="2"/>
+<text x="1005" y="320.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">STOP packet</text>
+<text x="845" y="459.32" font-family="Arial, sans-serif" font-size="21" fill="#173047">Keep the hand centered</text>
+<text x="845" y="498.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">A valid STOP packet arms the receiver.</text>
+<text x="845" y="526.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">Motors remain disabled.</text>
+<rect x="60" y="585" width="725" height="365" rx="12" fill="#edf5fa" stroke="#173047" stroke-width="2"/>
+<text x="80" y="622.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">C  TILT / DRIVE</text>
+<polyline points="94.81481480709323,792.3530290159483 104.32372569625896,771.9611038076237 97.33588262809926,737.2563483805245 97.42016864871303,715.7797821776435 107.0243468705712,711.1554162013409 113.46254856673366,725.743067106114 117.86155774206364,739.3798269219708 139.95740958811749,688.4458173488256 148.24792957708712,684.8639493567724 152.14676126544583,692.4747385054645 136.75295048947442,730.8108258096429 163.42370442680493,675.3898606031945 172.07699155974652,672.8046871477243 176.65555408838273,680.732439992722 151.34426183160718,736.7873325917815 182.27295416390882,677.5591425923071 190.60927760054489,675.6536999771145 194.87087643287558,684.2611836623896 164.66771838851787,745.48276273503 193.96944922898496,700.3915100383836 202.39737956095394,701.8389181769119 202.98916394325806,711.2177395977974 168.02789001695794,770.220572796299 152.35559811762838,786.0833993610134 138.9973194251299,812.9556692758074 94.81481480709323,792.3530290159483" fill="none" stroke="#173047" stroke-width="2"/>
+<polygon points="94.81481480709323,792.3530290159483 104.32372569625896,771.9611038076237 97.33588262809926,737.2563483805245 97.42016864871303,715.7797821776435 107.0243468705712,711.1554162013409 113.46254856673366,725.743067106114 117.86155774206364,739.3798269219708 139.95740958811749,688.4458173488256 148.24792957708712,684.8639493567724 152.14676126544583,692.4747385054645 136.75295048947442,730.8108258096429 163.42370442680493,675.3898606031945 172.07699155974652,672.8046871477243 176.65555408838273,680.732439992722 151.34426183160718,736.7873325917815 182.27295416390882,677.5591425923071 190.60927760054489,675.6536999771145 194.87087643287558,684.2611836623896 164.66771838851787,745.48276273503 193.96944922898496,700.3915100383836 202.39737956095394,701.8389181769119 202.98916394325806,711.2177395977974 168.02789001695794,770.220572796299 152.35559811762838,786.0833993610134 138.9973194251299,812.9556692758074" fill="#f8e2cc" stroke="#173047" stroke-width="2"/>
+<polyline points="127.8743065555602,737.4285808591117 163.22031024998955,753.9106930669989 152.1265808792962,777.701272476711 116.78057718486684,761.2191602688237 127.8743065555602,737.4285808591117" fill="none" stroke="#173047" stroke-width="2"/>
+<polygon points="127.8743065555602,737.4285808591117 163.22031024998955,753.9106930669989 152.1265808792962,777.701272476711 116.78057718486684,761.2191602688237" fill="#daedf5" stroke="#173047" stroke-width="2"/>
+<polyline points="135.53455958927833,747.6208830259144 151.16836891566052,754.9110480409414 145.14605868585556,767.8259340062136 129.51224935947334,760.5357689911866 135.53455958927833,747.6208830259144" fill="none" stroke="#173047" stroke-width="2"/>
+<polygon points="135.53455958927833,747.6208830259144 151.16836891566052,754.9110480409414 145.14605868585556,767.8259340062136 129.51224935947334,760.5357689911866" fill="#237cba" stroke="#173047" stroke-width="2"/>
+<rect x="590" y="650" width="130" height="170" rx="12" fill="#e6f0f5" stroke="#173047" stroke-width="2"/>
+<rect x="568" y="735.0" width="35" height="56.1" rx="12" fill="#344858" stroke="#173047" stroke-width="2"/>
+<rect x="707" y="735.0" width="35" height="56.1" rx="12" fill="#344858" stroke="#173047" stroke-width="2"/>
+<text x="625.0" y="679.8" font-family="Arial, sans-serif" font-size="15" fill="#526779">FRONT</text>
+<rect x="618" y="715" width="74" height="60" rx="12" fill="#d9ecf7" stroke="#173047" stroke-width="2"/>
+<text x="638" y="748.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">BOT</text>
+<polyline points="250,745 530,745" fill="none" stroke="#237cba" stroke-width="4"/>
+<polyline points="530,745 516.4932934647098,751.5244830116685 516.4932934647098,738.4755169883315 530,745" fill="none" stroke="#237cba" stroke-width="2"/>
+<polygon points="530,745 516.4932934647098,751.5244830116685 516.4932934647098,738.4755169883315" fill="#237cba" stroke="#237cba" stroke-width="2"/>
+<text x="250" y="715.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">DIRECTION</text>
+<text x="90" y="854.32" font-family="Arial, sans-serif" font-size="21" fill="#173047">Tilt after arming</text>
+<text x="90" y="893.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">Direction packets update the motors.</text>
+<text x="90" y="921.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">Return to neutral to stop.</text>
+<rect x="815" y="585" width="725" height="365" rx="12" fill="#fff4ed" stroke="#173047" stroke-width="2"/>
+<text x="835" y="622.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">D  LINK LOST / RECOVER</text>
+<polyline points="875.0,806.25 875.0,783.75 854.0,755.25 845.0,735.75 851.75,727.5 863.75,738.0 873.5,748.5 872.0,693.0 878.0,686.25 884.75,691.5 887.0,732.75 887.75,671.25 894.5,665.25 902.0,670.5 902.75,732.0 905.75,665.25 912.5,660.0 920.0,666.0 918.5,734.25 926.0,681.0 934.25,678.75 938.75,687.0 932.0,755.25 924.5,776.25 923.75,806.25 875.0,806.25" fill="none" stroke="#173047" stroke-width="2"/>
+<polygon points="875.0,806.25 875.0,783.75 854.0,755.25 845.0,735.75 851.75,727.5 863.75,738.0 873.5,748.5 872.0,693.0 878.0,686.25 884.75,691.5 887.0,732.75 887.75,671.25 894.5,665.25 902.0,670.5 902.75,732.0 905.75,665.25 912.5,660.0 920.0,666.0 918.5,734.25 926.0,681.0 934.25,678.75 938.75,687.0 932.0,755.25 924.5,776.25 923.75,806.25" fill="#f8e2cc" stroke="#173047" stroke-width="2"/>
+<polyline points="881.75,742.5 920.75,742.5 920.75,768.75 881.75,768.75 881.75,742.5" fill="none" stroke="#173047" stroke-width="2"/>
+<polygon points="881.75,742.5 920.75,742.5 920.75,768.75 881.75,768.75" fill="#daedf5" stroke="#173047" stroke-width="2"/>
+<polyline points="893.0,748.5 910.25,748.5 910.25,762.75 893.0,762.75 893.0,748.5" fill="none" stroke="#173047" stroke-width="2"/>
+<polygon points="893.0,748.5 910.25,748.5 910.25,762.75 893.0,762.75" fill="#237cba" stroke="#173047" stroke-width="2"/>
+<rect x="1345" y="650" width="130" height="170" rx="12" fill="#e6f0f5" stroke="#173047" stroke-width="2"/>
+<rect x="1323" y="735.0" width="35" height="56.1" rx="12" fill="#344858" stroke="#173047" stroke-width="2"/>
+<rect x="1462" y="735.0" width="35" height="56.1" rx="12" fill="#344858" stroke="#173047" stroke-width="2"/>
+<text x="1380.0" y="679.8" font-family="Arial, sans-serif" font-size="15" fill="#526779">FRONT</text>
+<rect x="1373" y="715" width="74" height="60" rx="12" fill="#d9ecf7" stroke="#173047" stroke-width="2"/>
+<text x="1393" y="748.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">BOT</text>
+<polyline points="1005,745 1021,745" fill="none" stroke="#bd423d" stroke-width="3"/>
+<polyline points="1037,745 1053,745" fill="none" stroke="#bd423d" stroke-width="3"/>
+<polyline points="1069,745 1085,745" fill="none" stroke="#bd423d" stroke-width="3"/>
+<polyline points="1101,745 1117,745" fill="none" stroke="#bd423d" stroke-width="3"/>
+<polyline points="1133,745 1149,745" fill="none" stroke="#bd423d" stroke-width="3"/>
+<polyline points="1165,745 1181,745" fill="none" stroke="#bd423d" stroke-width="3"/>
+<polyline points="1197,745 1213,745" fill="none" stroke="#bd423d" stroke-width="3"/>
+<polyline points="1229,745 1245,745" fill="none" stroke="#bd423d" stroke-width="3"/>
+<polyline points="1261,745 1277,745" fill="none" stroke="#bd423d" stroke-width="3"/>
+<polyline points="1137,735 1157,755" fill="none" stroke="#bd423d" stroke-width="3"/>
+<polyline points="1137,755 1157,735" fill="none" stroke="#bd423d" stroke-width="3"/>
+<text x="1005" y="715.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">RF timeout</text>
+<text x="845" y="854.32" font-family="Arial, sans-serif" font-size="21" fill="#173047">Switch transmitter off</text>
+<text x="845" y="893.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">After ~500 ms without accepted data: stop.</text>
+<text x="845" y="921.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">Reconnect, then return to neutral to re-arm.</text>
+<polyline points="60,1015 1540,1015" fill="none" stroke="#d7e1e8" stroke-width="2"/>
+<text x="60" y="1056.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">HAND GESTURE CONTROLLED ROBOT  /  System illustrations · reconstructed reference design</text>
+<text x="60" y="1084.72" font-family="Arial, sans-serif" font-size="16" fill="#526779">Illustrative snapshots, not photographs or measured results. Sensor mounting and motor direction require calibration.</text>
+</svg>

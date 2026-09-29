@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+<rect width="1600" height="1100" fill="white"/>
+<text x="60" y="73.28" font-family="Arial, sans-serif" font-size="34" fill="#173047">06  /  How the control loop works</text>
+<text x="60" y="112.48" font-family="Arial, sans-serif" font-size="19" fill="#526779">Calibrate once at startup; then repeat steps 2–6: sample → classify → transmit → validate → drive</text>
+<polyline points="60,140 1540,140" fill="none" stroke="#d7e1e8" stroke-width="2"/>
+<rect x="60" y="215" width="460" height="175" rx="12" fill="#edf5fa" stroke="#173047" stroke-width="2"/>
+<text x="80" y="252.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">1  Calibrate neutral</text>
+<text x="82" y="294.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">Wait 2 s after radio init</text>
+<text x="82" y="329.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">Average 100 samples (~1 s)</text>
+<polyline points="520,302 560,302" fill="none" stroke="#21835b" stroke-width="4"/>
+<polyline points="560,302 546.4932934647098,308.52448301166845 546.4932934647098,295.47551698833155 560,302" fill="none" stroke="#21835b" stroke-width="2"/>
+<polygon points="560,302 546.4932934647098,308.52448301166845 546.4932934647098,295.47551698833155" fill="#21835b" stroke="#21835b" stroke-width="2"/>
+<rect x="570" y="215" width="460" height="175" rx="12" fill="#edf5fa" stroke="#173047" stroke-width="2"/>
+<text x="590" y="252.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">2  Read hand tilt</text>
+<text x="592" y="294.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">A0 = X; A1 = Y</text>
+<text x="592" y="329.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">Subtract neutral; apply signs</text>
+<polyline points="1030,302 1070,302" fill="none" stroke="#21835b" stroke-width="4"/>
+<polyline points="1070,302 1056.49329346471,308.52448301166845 1056.49329346471,295.47551698833155 1070,302" fill="none" stroke="#21835b" stroke-width="2"/>
+<polygon points="1070,302 1056.49329346471,308.52448301166845 1056.49329346471,295.47551698833155" fill="#21835b" stroke="#21835b" stroke-width="2"/>
+<rect x="1080" y="215" width="460" height="175" rx="12" fill="#edf5fa" stroke="#173047" stroke-width="2"/>
+<text x="1100" y="252.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">3  Choose command</text>
+<text x="1102" y="294.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">Dominant axis; 45-count threshold</text>
+<text x="1102" y="329.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">Stop in dead zone or on a tie</text>
+<polyline points="1310,390 1310,465" fill="none" stroke="#21835b" stroke-width="4"/>
+<polyline points="1310,465 1303.4755169883315,451.49329346470984 1316.5244830116685,451.49329346470984 1310,465" fill="none" stroke="#21835b" stroke-width="2"/>
+<polygon points="1310,465 1303.4755169883315,451.49329346470984 1316.5244830116685,451.49329346470984" fill="#21835b" stroke="#21835b" stroke-width="2"/>
+<rect x="1080" y="465" width="460" height="175" rx="12" fill="#eef7f1" stroke="#173047" stroke-width="2"/>
+<text x="1100" y="502.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">4  Send over RF</text>
+<text x="1102" y="544.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">Payload: G | version 1 | command</text>
+<text x="1102" y="579.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">RadioHead frame CRC; 2,000 bit/s</text>
+<polyline points="1080,552 1030,552" fill="none" stroke="#21835b" stroke-width="4"/>
+<polyline points="1030,552 1043.50670653529,545.4755169883315 1043.50670653529,558.5244830116685 1030,552" fill="none" stroke="#21835b" stroke-width="2"/>
+<polygon points="1030,552 1043.50670653529,545.4755169883315 1043.50670653529,558.5244830116685" fill="#21835b" stroke="#21835b" stroke-width="2"/>
+<rect x="570" y="465" width="460" height="175" rx="12" fill="#eef7f1" stroke="#173047" stroke-width="2"/>
+<text x="590" y="502.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">5  Validate on robot</text>
+<text x="592" y="544.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">Check length, magic, version, command</text>
+<text x="592" y="579.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">STOP required to arm after link loss</text>
+<polyline points="570,552 520,552" fill="none" stroke="#21835b" stroke-width="4"/>
+<polyline points="520,552 533.5067065352902,545.4755169883315 533.5067065352902,558.5244830116685 520,552" fill="none" stroke="#21835b" stroke-width="2"/>
+<polygon points="520,552 533.5067065352902,545.4755169883315 533.5067065352902,558.5244830116685" fill="#21835b" stroke="#21835b" stroke-width="2"/>
+<rect x="60" y="465" width="460" height="175" rx="12" fill="#eef7f1" stroke="#173047" stroke-width="2"/>
+<text x="80" y="502.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">6  Apply motor command</text>
+<text x="82" y="544.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">L293D selects wheel directions</text>
+<text x="82" y="579.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">Disable bridges before changing state</text>
+<rect x="60" y="700" width="1480" height="265" rx="12" fill="#fff4ed" stroke="#173047" stroke-width="2"/>
+<text x="80" y="737.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">Stop and reconnect behavior</text>
+<text x="85" y="768.4" font-family="Arial, sans-serif" font-size="20" fill="#173047">No accepted packet for ≥500 ms → disable motor outputs and disarm.</text>
+<text x="85" y="810.4" font-family="Arial, sans-serif" font-size="20" fill="#173047">Malformed application payload → stop and disarm. A radio CRC failure is dropped; the timeout still runs.</text>
+<text x="85" y="852.4" font-family="Arial, sans-serif" font-size="20" fill="#173047">After startup or disarming → movement packets cannot arm the robot; a valid STOP packet must arrive first.</text>
+<text x="85" y="894.4" font-family="Arial, sans-serif" font-size="20" fill="#173047">Returning the hand to neutral sends STOP. Motors coast when disabled; the robot does not actively brake.</text>
+<text x="85" y="936.4" font-family="Arial, sans-serif" font-size="20" fill="#173047">The radio has no authentication or acknowledgements. Firmware hangs and stuck sensor values are not covered.</text>
+<polyline points="60,1015 1540,1015" fill="none" stroke="#d7e1e8" stroke-width="2"/>
+<text x="60" y="1056.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">HAND GESTURE CONTROLLED ROBOT  /  System illustrations · reconstructed reference design</text>
+<text x="60" y="1084.72" font-family="Arial, sans-serif" font-size="16" fill="#526779">Illustrative snapshots, not photographs or measured results. Sensor mounting and motor direction require calibration.</text>
+</svg>

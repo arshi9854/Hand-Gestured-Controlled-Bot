@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+<rect width="1600" height="1100" fill="white"/>
+<text x="60" y="73.28" font-family="Arial, sans-serif" font-size="34" fill="#173047">04  /  From hand tilt to robot movement</text>
+<text x="60" y="112.48" font-family="Arial, sans-serif" font-size="19" fill="#526779">Whole-system view: two independently powered devices communicate through a one-way RF link</text>
+<polyline points="60,140 1540,140" fill="none" stroke="#d7e1e8" stroke-width="2"/>
+<rect x="60" y="190" width="580" height="600" rx="12" fill="#f8fafc" stroke="#173047" stroke-width="2"/>
+<text x="80" y="227.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">HAND CONTROLLER</text>
+<polyline points="147.0,558.5 147.0,519.5 110.6,470.1 95.0,436.3 106.7,422.0 127.5,440.20000000000005 144.4,458.4 141.8,362.2 152.2,350.5 163.9,359.6 167.8,431.1 169.10000000000002,324.5 180.8,314.1 193.8,323.2 195.10000000000002,429.8 200.3,314.1 212.0,305.0 225.0,315.4 222.4,433.70000000000005 235.4,341.4 249.70000000000002,337.5 257.5,351.8 245.8,470.1 232.8,506.5 231.5,558.5 147.0,558.5" fill="none" stroke="#173047" stroke-width="2"/>
+<polygon points="147.0,558.5 147.0,519.5 110.6,470.1 95.0,436.3 106.7,422.0 127.5,440.20000000000005 144.4,458.4 141.8,362.2 152.2,350.5 163.9,359.6 167.8,431.1 169.10000000000002,324.5 180.8,314.1 193.8,323.2 195.10000000000002,429.8 200.3,314.1 212.0,305.0 225.0,315.4 222.4,433.70000000000005 235.4,341.4 249.70000000000002,337.5 257.5,351.8 245.8,470.1 232.8,506.5 231.5,558.5" fill="#f8e2cc" stroke="#173047" stroke-width="2"/>
+<polyline points="158.7,448.0 226.3,448.0 226.3,493.5 158.7,493.5 158.7,448.0" fill="none" stroke="#173047" stroke-width="2"/>
+<polygon points="158.7,448.0 226.3,448.0 226.3,493.5 158.7,493.5" fill="#daedf5" stroke="#173047" stroke-width="2"/>
+<polyline points="178.2,458.4 208.10000000000002,458.4 208.10000000000002,483.1 178.2,483.1 178.2,458.4" fill="none" stroke="#173047" stroke-width="2"/>
+<polygon points="178.2,458.4 208.10000000000002,458.4 208.10000000000002,483.1 178.2,483.1" fill="#237cba" stroke="#173047" stroke-width="2"/>
+<text x="90" y="619.32" font-family="Arial, sans-serif" font-size="21" fill="#173047">Hand-mounted sensor</text>
+<text x="90" y="652.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">Analog X / Y tilt signals</text>
+<rect x="365" y="285" width="235" height="105" rx="12" fill="#edf5fa" stroke="#173047" stroke-width="2"/>
+<text x="385" y="319.4" font-family="Arial, sans-serif" font-size="20" fill="#173047">Arduino Uno · TX</text>
+<text x="387" y="346.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">Calibrate + classify</text>
+<rect x="365" y="465" width="235" height="105" rx="12" fill="#eaf6ed" stroke="#173047" stroke-width="2"/>
+<text x="385" y="502.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">RF transmitter</text>
+<text x="387" y="526.56" font-family="Arial, sans-serif" font-size="18" fill="#173047">Command packet</text>
+<polyline points="280,452 345,340" fill="none" stroke="#21835b" stroke-width="4"/>
+<polyline points="345,340 343.8633257647202,354.9568703839691 332.5773129091003,348.40695220883254 345,340" fill="none" stroke="#21835b" stroke-width="2"/>
+<polygon points="345,340 343.8633257647202,354.9568703839691 332.5773129091003,348.40695220883254" fill="#21835b" stroke="#21835b" stroke-width="2"/>
+<polyline points="482,390 482,465" fill="none" stroke="#21835b" stroke-width="4"/>
+<polyline points="482,465 475.47551698833155,451.49329346470984 488.52448301166845,451.49329346470984 482,465" fill="none" stroke="#21835b" stroke-width="2"/>
+<polygon points="482,465 475.47551698833155,451.49329346470984 488.52448301166845,451.49329346470984" fill="#21835b" stroke="#21835b" stroke-width="2"/>
+<text x="90" y="731.4" font-family="Arial, sans-serif" font-size="20" fill="#bd423d">Local power + GND_TX</text>
+<polyline points="640,518 940,518" fill="none" stroke="#237cba" stroke-width="4"/>
+<polyline points="940,518 926.4932934647098,524.5244830116685 926.4932934647098,511.47551698833155 940,518" fill="none" stroke="#237cba" stroke-width="2"/>
+<polygon points="940,518 926.4932934647098,524.5244830116685 926.4932934647098,511.47551698833155" fill="#237cba" stroke="#237cba" stroke-width="2"/>
+<text x="687" y="476.16" font-family="Arial, sans-serif" font-size="23" fill="#237cba">WIRELESS RF</text>
+<text x="668" y="568.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">Matched ASK/OOK pair</text>
+<text x="679" y="605.64" font-family="Arial, sans-serif" font-size="17" fill="#526779">No cable between devices</text>
+<rect x="960" y="190" width="580" height="600" rx="12" fill="#f8fafc" stroke="#173047" stroke-width="2"/>
+<text x="980" y="227.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">ROBOT RECEIVER</text>
+<rect x="1110" y="300" width="270" height="335" rx="12" fill="#e6f0f5" stroke="#173047" stroke-width="2"/>
+<rect x="1088" y="467.5" width="35" height="110.55000000000001" rx="12" fill="#344858" stroke="#173047" stroke-width="2"/>
+<rect x="1367" y="467.5" width="35" height="110.55000000000001" rx="12" fill="#344858" stroke="#173047" stroke-width="2"/>
+<text x="1215.0" y="329.8" font-family="Arial, sans-serif" font-size="15" fill="#526779">FRONT</text>
+<rect x="1134" y="358" width="222" height="55" rx="12" fill="#eaf6ed" stroke="#173047" stroke-width="2"/>
+<text x="1154" y="395.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">RF receiver</text>
+<rect x="1134" y="426" width="222" height="55" rx="12" fill="#d9ecf7" stroke="#173047" stroke-width="2"/>
+<text x="1154" y="463.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">Arduino Uno</text>
+<rect x="1134" y="494" width="222" height="55" rx="12" fill="#eae2f5" stroke="#173047" stroke-width="2"/>
+<text x="1154" y="531.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">L293D</text>
+<polyline points="1245.0,413 1245.0,426" fill="none" stroke="#21835b" stroke-width="4"/>
+<polyline points="1245.0,426 1238.4755169883315,412.49329346470984 1251.5244830116685,412.49329346470984 1245.0,426" fill="none" stroke="#21835b" stroke-width="2"/>
+<polygon points="1245.0,426 1238.4755169883315,412.49329346470984 1251.5244830116685,412.49329346470984" fill="#21835b" stroke="#21835b" stroke-width="2"/>
+<polyline points="1245.0,481 1245.0,494" fill="none" stroke="#21835b" stroke-width="4"/>
+<polyline points="1245.0,494 1238.4755169883315,480.49329346470984 1251.5244830116685,480.49329346470984 1245.0,494" fill="none" stroke="#21835b" stroke-width="2"/>
+<polygon points="1245.0,494 1238.4755169883315,480.49329346470984 1251.5244830116685,480.49329346470984" fill="#21835b" stroke="#21835b" stroke-width="2"/>
+<text x="1020" y="698.4" font-family="Arial, sans-serif" font-size="20" fill="#173047">Left motor     ← L293D →     Right motor</text>
+<text x="1020" y="743.48" font-family="Arial, sans-serif" font-size="19" fill="#bd423d">Logic + motor supplies share GND_RX</text>
+<rect x="60" y="835" width="1480" height="155" rx="12" fill="#f7f9fb" stroke="#173047" stroke-width="2"/>
+<text x="80" y="872.16" font-family="Arial, sans-serif" font-size="23" fill="#173047">Reading this diagram</text>
+<text x="85" y="900.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">Tilt selects a direction; transmitter sends it; receiver validates it; the driver energizes the two motors.</text>
+<text x="85" y="932.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">The RF link carries commands, not power. Actual module frequency, voltage, chassis and sensor mounting are provisional.</text>
+<text x="85" y="964.48" font-family="Arial, sans-serif" font-size="19" fill="#173047">Illustration matches the repository architecture; it is not evidence of the original robot’s physical appearance.</text>
+<polyline points="60,1015 1540,1015" fill="none" stroke="#d7e1e8" stroke-width="2"/>
+<text x="60" y="1056.56" font-family="Arial, sans-serif" font-size="18" fill="#526779">HAND GESTURE CONTROLLED ROBOT  /  System illustrations · reconstructed reference design</text>
+<text x="60" y="1084.72" font-family="Arial, sans-serif" font-size="16" fill="#526779">Illustrative snapshots, not photographs or measured results. Sensor mounting and motor direction require calibration.</text>
+</svg>

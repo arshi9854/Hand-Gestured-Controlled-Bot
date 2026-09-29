@@ -1,10 +1,14 @@
-# Circuit diagram guide
+# Circuit and system diagram guide
 
 | Setup | Editable vector | PNG image |
 | --- | --- | --- |
 | Hand-controller transmitter | [SVG](../assets/diagrams/01-transmitter.svg) | [PNG](../assets/diagrams/01-transmitter.png) |
 | Robot receiver and motors | [SVG](../assets/diagrams/02-receiver.svg) | [PNG](../assets/diagrams/02-receiver.png) |
 | Robot power and enable details | [SVG](../assets/diagrams/03-power-and-enables.svg) | [PNG](../assets/diagrams/03-power-and-enables.png) |
+| Whole-system connection | [SVG](../assets/diagrams/04-whole-system.svg) | [PNG](../assets/diagrams/04-whole-system.png) |
+| Hand gestures and wheel movement | [SVG](../assets/diagrams/05-gesture-map.svg) | [PNG](../assets/diagrams/05-gesture-map.png) |
+| Control-loop sequence | [SVG](../assets/diagrams/06-control-flow.svg) | [PNG](../assets/diagrams/06-control-flow.png) |
+| Startup, driving, and link-loss snapshots | [SVG](../assets/diagrams/07-operating-snapshots.svg) | [PNG](../assets/diagrams/07-operating-snapshots.png) |
 
 These are newly drawn functional connection diagrams for this repository’s firmware, not recovered original schematics or breadboard placement instructions. Read sheets 02 and 03 together. Identical net names on those sheets are electrically connected. TX and RX grounds belong to separate wireless devices and are not wired together.
 
@@ -15,3 +19,5 @@ Radio module models remain unspecified: V_RF_TX and V_RF_RX mean module-rated su
 Pin numbers were checked against the [TI L293D datasheet](https://www.ti.com/lit/ds/symlink/l293.pdf); signal assignments match `firmware/transmitter/transmitter.ino` and `firmware/receiver/receiver.ino`. The circuit has not been validated on hardware.
 
 Regenerate with `python3 scripts/draw_circuits.py` from an environment with Pillow. The renderer currently uses the macOS Arial font path; adjust that path on other systems. SVGs are independently editable in a vector editor.
+
+System illustrations (04–07) are explained in the [system overview](system-overview.md). Regenerate them with `python3 scripts/draw_system.py`. Their snapshots depict expected firmware behavior, not observed physical tests.
