@@ -2,3 +2,5 @@ build/
 .DS_Store
 *.hex
 *.elf
+
+__pycache__/
