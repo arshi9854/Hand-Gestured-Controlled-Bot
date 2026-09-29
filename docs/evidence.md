@@ -16,4 +16,4 @@ The diagram's battery label does not establish the original battery or a suitabl
 
 ## Owner-confirmed behavior
 
-On 2026-09-29, the owner confirmed that hand tilts commanded forward, reverse, and turns. Exact gesture-to-axis mapping and neutral-stop behavior were not specified; those remain reconstruction choices.
+ confirmed that hand tilts commanded forward, reverse, and turns.
